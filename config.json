@@ -1,0 +1,111 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "src": "src/pages/Home.tsx"
+    },
+    {
+      "path": "/nosotros",
+      "src": "src/pages/Nosotros.tsx"
+    },
+    {
+      "path": "/servicios",
+      "src": "src/pages/Servicios.tsx"
+    },
+    {
+      "path": "/ferias-de-consumo",
+      "src": "src/pages/FeriasDeConsumo.tsx"
+    },
+    {
+      "path": "/contacto",
+      "src": "src/pages/Contacto.tsx"
+    }
+  ],
+  "components": [
+    {
+      "name": "ContactForm",
+      "src": "src/components/ContactForm.tsx",
+      "route": "/preview/contact-form"
+    },
+    {
+      "name": "EventCalendar",
+      "src": "src/components/EventCalendar.tsx",
+      "route": "/preview/event-calendar"
+    },
+    {
+      "name": "FAQ",
+      "src": "src/components/FAQ.tsx",
+      "route": "/preview/faq"
+    },
+    {
+      "name": "Footer",
+      "src": "src/components/Footer.tsx",
+      "route": "/preview/footer"
+    },
+    {
+      "name": "Header",
+      "src": "src/components/Header.tsx",
+      "route": "/preview/header"
+    },
+    {
+      "name": "Hero",
+      "src": "src/components/Hero.tsx",
+      "route": "/preview/hero"
+    },
+    {
+      "name": "NewsSection",
+      "src": "src/components/NewsSection.tsx",
+      "route": "/preview/news-section"
+    },
+    {
+      "name": "OfficeLocations",
+      "src": "src/components/OfficeLocations.tsx",
+      "route": "/preview/office-locations"
+    },
+    {
+      "name": "PageHeader",
+      "src": "src/components/PageHeader.tsx",
+      "route": "/preview/page-header"
+    },
+    {
+      "name": "ProductShowcase",
+      "src": "src/components/ProductShowcase.tsx",
+      "route": "/preview/product-showcase"
+    },
+    {
+      "name": "ServiceCard",
+      "src": "src/components/ServiceCard.tsx",
+      "route": "/preview/service-card"
+    },
+    {
+      "name": "ServiceDetail",
+      "src": "src/components/ServiceDetail.tsx",
+      "route": "/preview/service-detail"
+    },
+    {
+      "name": "ServiceGrid",
+      "src": "src/components/ServiceGrid.tsx",
+      "route": "/preview/service-grid"
+    },
+    {
+      "name": "Stats",
+      "src": "src/components/Stats.tsx",
+      "route": "/preview/stats"
+    },
+    {
+      "name": "TeamGrid",
+      "src": "src/components/TeamGrid.tsx",
+      "route": "/preview/team-grid"
+    },
+    {
+      "name": "Testimonials",
+      "src": "src/components/Testimonials.tsx",
+      "route": "/preview/testimonials"
+    },
+    {
+      "name": "Timeline",
+      "src": "src/components/Timeline.tsx",
+      "route": "/preview/timeline"
+    }
+  ]
+}

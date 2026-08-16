@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--fontSans);
+  --font-display: var(--fontDisplay);
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-accent: var(--color-accent);
+  --color-background: var(--color-background);
+  --color-foreground: var(--color-foreground);
+  --color-card: var(--color-card);
+  --color-border: var(--color-border);
+  --color-muted-foreground: var(--color-muted-foreground);
+  --color-destructive: var(--color-destructive);
+  --color-service-green: var(--color-service-green);
+  --color-service-blue: var(--color-service-blue);
+  --color-service-purple: var(--color-service-purple);
+  --color-service-yellow: var(--color-service-yellow);
+  --radius-lg: var(--radius-lg);
+  --shadow-custom: var(--shadow-custom);
+}
+
+:root {
+  --fontSans: 'Inter', sans-serif;
+  --fontDisplay: 'Sora', sans-serif;
+  --color-primary: #0B6623;
+  --color-secondary: #E6B800;
+  --color-accent: #2563EB;
+  --color-background: #FFFFFF;
+  --color-foreground: #1C1C1C;
+  --color-card: #FFFFFF;
+  --color-border: #E5E7EB;
+  --color-muted-foreground: #6B7280;
+  --color-destructive: #DC2626;
+  --color-service-green: #0B6623;
+  --color-service-blue: #2563EB;
+  --color-service-purple: #7C3AED;
+  --color-service-yellow: #E6B800;
+  --radius-lg: 0.75rem;
+  --shadow-custom: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--fontDisplay);
+  }
+  .bg-gradient-hero {
+    background: linear-gradient(135deg, rgba(11, 102, 35, 0.05) 0%, rgba(255, 255, 255, 1) 100%);
+  }
+  .bg-gradient-card-green {
+    background: linear-gradient(135deg, rgba(11, 102, 35, 0.08) 0%, rgba(255, 255, 255, 1) 100%);
+  }
+  .bg-gradient-card-blue {
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.08) 0%, rgba(255, 255, 255, 1) 100%);
+  }
+  .bg-gradient-card-purple {
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.08) 0%, rgba(255, 255, 255, 1) 100%);
+  }
+  .bg-gradient-card-yellow {
+    background: linear-gradient(135deg, rgba(230, 184, 0, 0.08) 0%, rgba(255, 255, 255, 1) 100%);
+  }
+}
